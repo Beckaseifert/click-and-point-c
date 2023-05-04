@@ -1,0 +1,76 @@
+
+    background-color: #1e003e;
+    border: 3px solid #dace76;
+<style>
+
+  body {
+    background-color: #1e003e;
+    border: 3px solid #dace76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+  }
+  
+  main {
+    position: absolute;
+    width: 50vw;
+    height: calc(50vw * 0.75);
+    background-color: #dace76;
+    background: url(images/stars/1.gif) no-repeat center center fixed; 
+    background-size: cover;
+  }
+  
+  main > img {
+    position: absolute;
+  }
+  
+</style>
+
+<main>
+</main>
+
+<script>
+
+  let lvl = 0
+  
+  const data = [
+    {
+      background: 'images/stars/1.gif',
+      images: [
+        {
+          src: 'images/gifs/cd.gif',
+          width: '10vw',
+          left: '24.5vw',
+          top: '17.5vw'
+        },
+        {
+          src: 'images/gifs/heart.gif',
+          width: '5vw',
+          left: '33.3vw',
+          top: '5.5vw'
+        }
+      ]
+    },
+    {},
+    {}
+  ]
+  
+  function addImage (imageObj) {
+    // needs to create an image element
+    // update that image element's src so it matches the obj.src
+    // update that image's style so it matches the obj's styles
+    // add that image element to our main element
+  }
+  
+  function createScene (levelObj) {
+    // update the background image of the main element
+  	// ...to match the levelObj.background
+    // loop through the levelObj.images
+    // ...and run addImage() passing each image object
+  }
+  
+  window.addEventListener('load', () => createScene(lvl))
+
+
+</script>
